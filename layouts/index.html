@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.Language.Lang }}">
+
+<head>{{ partial "head.html" . }}</head>
+
+<body>
+    <header class="xb-header">
+        <nav>
+            <ul class="xb-logo">
+                <li>
+                    <img src="img/vue.svg" alt="logo">
+                    <strong>标题Logo</strong>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="#">情报</a></li>
+                <li><a href="#">商店</a></li>
+                <li><a href="#">产品</a></li>
+                <li><a href="#">货物</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">招募</a></li>
+                <li><a href="#" role="button">联络</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img class="xb-banner" src="https://old.sprite.net/uploads/top13_pc.jpg" alt="" srcset="">
+    <main class="xb-main">
+        <div>{{ partial "fragments/section.html" . }}</div>
+        <time datetime="{{ .PublishDate }}">{{ .PublishDate }}</time>
+        <div class="grid">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </main>
+    <footer class="xb-footer">
+        <nav>
+            <ul class="xb-social-media">
+                <li>
+                    <img src="img/vue.svg" alt="logo">
+                </li>
+                <li>
+                    <img src="img/bilibili.svg" alt="logo">
+                </li>
+                <li>
+                    <img src="img/vue.svg" alt="logo">
+                </li>
+            </ul>
+            <ul class="xb-footer-menu">
+                <li><a href="#">支持</a></li>
+                <li><a href="#">招聘</a></li>
+                <li><a href="#">联系</a></li>
+                <li>© sprite/S-WORKS ALL RIGHTS RESERVED.</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
